@@ -1,0 +1,363 @@
+/* =============================================
+   RESET & BASE
+============================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(10, 10, 10, 0.95);
+  font-family: Arial, sans-serif;
+  color: #F0F0F0;
+}
+
+/* =============================================
+   NAVBAR
+============================================= */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0A0A0A;
+  z-index: 100;
+  border-bottom: 1px solid rgba(245, 197, 24, 0.2);
+}
+
+.nav-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F5C518;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F0F0F0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #F5C518;
+}
+
+/* =============================================
+   HERO SECTION
+============================================= */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* YELLOW SLANTED SIDE */
+.hero-yellow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-color: rgba(245, 197, 24, 0.5);
+  clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* LOGO + DESCRIPTION */
+.hero-top {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.hero-logo img {
+  width: 250px;
+}
+
+.hero-description h1 {
+  font-size: 1.5rem;
+  color: #F5C518;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.hero-description p {
+  font-size: 0.85rem;
+  color: #F0F0F0;
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+/* CTA BUTTONS */
+.hero-cta {
+  position: absolute;
+  bottom: 220px;
+  left: 60px;
+  display: flex;
+  gap: 16px;
+  z-index: 10;
+}
+
+/* SERVICES LIST */
+.hero-services {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  display: flex;
+  gap: 60px;
+  z-index: 10;
+}
+
+.services-column {
+  flex: 1;
+}
+
+.services-title {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #F5C518;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services-list li {
+  color: #F0F0F0;
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  border-left: 3px solid #F5C518;
+  background-color: rgba(245, 197, 24, 0.05);
+  transition: background-color 0.3s;
+}
+
+.services-list li:hover {
+  background-color: rgba(245, 197, 24, 0.12);
+}
+
+/* MOTORCYCLE BG IMAGE */
+.hero-moto-bg {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 50%;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+/* SHOP STORY */
+.hero-story {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  z-index: 10;
+}
+
+.story-title {
+  font-size: 1.3rem;
+  color: #0A0A0A;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0A0A0A;
+}
+
+.story-text {
+  font-size: 0.82rem;
+  color: #0A0A0A;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* =============================================
+   BUTTONS
+============================================= */
+.btn-primary {
+  background: #F5C518;
+  color: #0A0A0A;
+  padding: 14px 32px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #ffd700;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #F0F0F0;
+  padding: 14px 32px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgba(240, 240, 240, 0.35);
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  border-color: #F5C518;
+  color: #F5C518;
+  transform: translateY(-2px);
+}
+
+/* =============================================
+   PAGE WRAPPER (about, contact, products pages)
+============================================= */
+.page-wrapper {
+  padding: 120px 60px 60px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* PAGE TITLE */
+.page-title {
+  margin-bottom: 60px;
+  border-left: 4px solid #F5C518;
+  padding-left: 20px;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  color: #F0F0F0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.page-title h1 span {
+  color: #F5C518;
+}
+
+.page-title p {
+  color: rgba(240, 240, 240, 0.5);
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+/* SECTION HEADING */
+.section-heading {
+  font-size: 1.8rem;
+  color: #F5C518;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(245, 197, 24, 0.3);
+}
+
+/* =============================================
+   FOOTER
+============================================= */
+footer {
+  background: #0A0A0A;
+  border-top: 1px solid rgba(245, 197, 24, 0.2);
+  padding: 60px 60px 0 60px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-logo {
+  font-size: 1.3rem;
+  color: #F5C518;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  color: rgba(240, 240, 240, 0.5);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.footer-heading {
+  color: #F0F0F0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: rgba(240, 240, 240, 0.5);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #F5C518;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(245, 197, 24, 0.1);
+  padding: 20px 0;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom p {
+  color: rgba(240, 240, 240, 0.3);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}

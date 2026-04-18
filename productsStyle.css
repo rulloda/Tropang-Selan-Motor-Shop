@@ -1,0 +1,339 @@
+/* =============================================
+   RESET & BASE
+============================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+background: #F5C518;
+background: radial-gradient(circle, rgb(114, 95, 21) 0%, rgb(31, 22, 2) 100%);
+
+  font-family: Arial, sans-serif;
+  color: #F0F0F0;
+}
+
+/* =============================================
+   NAVBAR
+============================================= */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0A0A0A;
+  z-index: 100;
+  border-bottom: 1px solid rgba(245, 197, 24, 0.2);
+}
+
+.nav-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F5C518;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F0F0F0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #F5C518;
+}
+
+/* =============================================
+   BUTTONS
+============================================= */
+.btn-primary {
+  background: #F5C518;
+  color: #0A0A0A;
+  padding: 14px 32px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #ffd700;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #F0F0F0;
+  padding: 14px 32px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgba(240, 240, 240, 0.35);
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  border-color: #F5C518;
+  color: #F5C518;
+  transform: translateY(-2px);
+}
+
+/* =============================================
+   PAGE WRAPPER (about, contact, products pages)
+============================================= */
+.page-wrapper {
+  padding: 120px 60px 60px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* PAGE TITLE */
+.page-title {
+  margin-bottom: 60px;
+  border-left: 4px solid #F5C518;
+  padding-left: 20px;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  color: #F0F0F0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.page-title h1 span {
+  color: #F5C518;
+}
+
+.page-title p {
+  color: rgba(240, 240, 240, 0.5);
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+/* SECTION HEADING */
+.section-heading {
+  font-size: 1.8rem;
+  color: #F5C518;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(245, 197, 24, 0.3);
+}
+
+/* =============================================
+   PRODUCTS PAGE
+============================================= */
+.products-section {
+  margin-bottom: 60px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  background: linear-gradient(left black, YELLOW);
+  border: 1px solid rgba(245, 197, 24, 0.2);
+  width: calc(33% - 16px);
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: #F5C518;
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-info {
+  padding: 16px;
+}
+
+.card-info h3 {
+  color: #F0F0F0;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card-price {
+  color: #F5C518;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.products-section {
+  margin-bottom: 60px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  background: linear-gradient(left black, YELLOW);
+  border: 1px solid rgba(245, 197, 24, 0.2);
+  width: calc(33% - 16px);
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: #F5C518;
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-info {
+  padding: 16px;
+}
+
+.card-info h3 {
+  color: #F0F0F0;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card-price {
+  color: #F5C518;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.service-card {
+  background: rgba(245, 197, 24, 0.05);
+  border: 1px solid rgba(245, 197, 24, 0.2);
+  padding: 32px;
+  text-align: center;
+  width: calc(25% - 18px);
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.service-card:hover {
+  border-color: #F5C518;
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.service-card h3 {
+  color: #F0F0F0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* =============================================
+   FOOTER
+============================================= */
+footer {
+  background: #0A0A0A;
+  border-top: 1px solid rgba(245, 197, 24, 0.2);
+  padding: 60px 60px 0 60px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-logo {
+  font-size: 1.3rem;
+  color: #F5C518;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  color: rgba(240, 240, 240, 0.5);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.footer-heading {
+  color: #F0F0F0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: rgba(240, 240, 240, 0.5);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #F5C518;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(245, 197, 24, 0.1);
+  padding: 20px 0;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom p {
+  color: rgba(240, 240, 240, 0.3);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
