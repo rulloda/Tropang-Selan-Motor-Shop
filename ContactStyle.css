@@ -339,3 +339,146 @@ footer {
   }
 
 }
+@media (max-width: 576px) {
+
+  /* NAVBAR — smaller on mobile */
+  nav {
+    padding: 14px 20px;
+  }
+
+  .nav-name {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  /* HERO — stack everything vertically */
+  .hero {
+    min-height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-yellow {
+    width: 100%;
+    height: 300px;
+    top: auto;
+    bottom: 0;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+    /* slant is now at the TOP of the yellow block */
+  }
+
+  .hero-top {
+    position: relative; /* no longer absolute on mobile */
+    top: auto;
+    left: auto;
+    margin-top: 90px;
+    padding: 0 20px;
+    flex-direction: column; /* logo on top, text below */
+    text-align: center;
+  }
+
+  .hero-logo img {
+    width: 80px;
+  }
+
+  .hero-description h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero-description p {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .hero-story {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .story-title {
+    color: #0A0A0A;
+  }
+
+  .story-text {
+    color: #0A0A0A;
+  }
+
+  .hero-cta {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .hero-services {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    flex-direction: column; /* stack the two columns */
+    width: 90%;
+    margin: 20px auto;
+    gap: 30px;
+  }
+
+  .hero-moto-bg {
+    display: none; /* hide on mobile — too small to matter */
+  }
+
+  /* PAGE WRAPPER */
+  .page-wrapper {
+    padding: 100px 20px 40px 20px;
+  }
+
+  /* PAGE TITLE */
+  .page-title h1 {
+    font-size: 1.8rem;
+  }
+
+  /* ABOUT PAGE */
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  /* CONTACT PAGE */
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  /* PRODUCTS PAGE */
+  .card {
+    width: 100%; /* 1 card per row on mobile */
+  }
+
+  .service-card {
+    width: calc(50% - 12px); /* 2 service cards per row */
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  footer {
+    padding: 40px 20px 0 20px;
+  }
