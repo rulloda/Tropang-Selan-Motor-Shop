@@ -311,3 +311,15 @@ footer {
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
+ /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  /* ABOUT PAGE */
+  .about-grid {
+    flex-direction: column;
+  }
+
+
+
