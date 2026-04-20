@@ -312,7 +312,30 @@ footer {
   letter-spacing: 1px;
 }
 
- /* CONTACT PAGE */
-  .contact-grid {
-    flex-direction: column;
+@media (max-width: 992px) {
+
+  /* NAVBAR */
+  nav {
+    padding: 16px 30px;
   }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  
+
+  /* PRODUCTS PAGE */
+  .card {
+    width: calc(50% - 12px); /* 2 cards per row instead of 3 */
+  }
+
+  
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+}
