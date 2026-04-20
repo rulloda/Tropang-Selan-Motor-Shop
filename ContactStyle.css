@@ -325,12 +325,12 @@ footer {
 
   
 
-  /* PRODUCTS PAGE */
-  .card {
-    width: calc(50% - 12px); /* 2 cards per row instead of 3 */
+  /* CONTACT PAGE */
+  .contact-grid {
+    flex-direction: column;
   }
 
-  
+ 
 
   /* FOOTER */
   .footer-container {
