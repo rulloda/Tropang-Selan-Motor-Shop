@@ -1,5 +1,5 @@
 // =============================================
-// EMAILJS INIT
+// EMAILJS 
 // =============================================
 emailjs.init("4L3qievJyn5R3kg_Y");
 
@@ -166,7 +166,7 @@ function placeOrder() {
     confirmBtn.disabled = true;
 
     emailjs.send("service_c86jidb", "template_y1y9j48", {
-        to_email:       email,     // ← NOW this will work
+        to_email:       email,     
         customer_name:  name,
         customer_phone: phone,
         order_id:       orderId,
