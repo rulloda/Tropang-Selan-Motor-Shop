@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tropang Selan | Contact Us</title>
+  <link rel="stylesheet" href="ContactStyle.css">
+  <!-- EmailJS only in head, NO contact.js here -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo"><img src="logo.png" alt="Tropang Selan Logo"></div>
+    <a href="index.html" class="nav-name">TROPANG SELAN</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="page-title">
+      <h1>Contact <span>Us</span></h1>
+      <p>We'd love to hear from you!</p>
+    </div>
+
+    <section class="contact-section">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="rev-widget-wrapper">
+            <div class="widget-container">
+              <header class="widget-header">
+                <div class="widget-logo">Tropang<span>Selan</span></div>
+                <div class="widget-tagline">Order Now!</div>
+              </header>
+
+              <div class="widget-shell">
+                <div class="widget-steps">
+                  <div class="step-pill active" id="sp1"><span class="step-num">1</span></div>
+                  <div class="step-div"></div>
+                  <div class="step-pill" id="sp2"><span class="step-num">2</span></div>
+                  <div class="step-div"></div>
+                  <div class="step-pill" id="sp3"><span class="step-num">3</span></div>
+                  <div class="step-div"></div>
+                  <div class="step-pill" id="sp4"><span class="step-num">4</span></div>
+                </div>
+
+                <!-- Step 1 -->
+                <div id="s1">
+                  <div class="widget-sec-title">Details</div>
+                  <p class="widget-sec-sub">Order confirmation details</p>
+                  <div class="widget-field">
+                    <input type="text" id="name" placeholder="Full Name" oninput="validateName(event)" />
+                  </div>
+                  <div class="widget-field">
+                    <input type="email" id="email" placeholder="Email Address" />
+                  </div>
+                  <div class="widget-field">
+                    <input type="tel" id="phone" placeholder="Phone Number" oninput="validatePhone(event)" maxlength="11" />
+                  </div>
+                  <button class="widget-btn-primary" onclick="goToShop()">Browse Parts →</button>
+                </div>
+
+                <!-- Step 2 -->
+                <div id="s2" class="widget-hidden">
+                  <div class="widget-sec-title">Our Products</div>
+                  <div id="cat-tabs" class="widget-cat-tabs"></div>
+                  <div id="pgrid" class="widget-pgrid"></div>
+                  <div class="widget-btn-row">
+                    <button class="widget-btn-primary" onclick="goToReview()">Review Order</button>
+                    <button class="widget-btn-ghost" onclick="setStep(1)">Back</button>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div id="s3" class="widget-hidden">
+                  <div class="widget-sec-title">Review</div>
+                  <div class="widget-rbox" id="review-items"></div>
+                  <div class="widget-btn-row">
+                    <button class="widget-btn-primary" onclick="placeOrder()">Confirm Order</button>
+                    <button class="widget-btn-ghost" onclick="setStep(2)">Back</button>
+                  </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div id="s4" class="widget-hidden" style="text-align:center;">
+                  <div class="success-icon">✓</div>
+                  <div class="widget-sec-title">Success!</div>
+                  <p id="s-name" class="widget-sec-sub"></p>
+                  <div id="s-oid" class="order-id-display"></div>
+                  <button class="widget-btn-primary" onclick="resetAll()">New Order</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div><h4>Phone</h4><p>+63 995 534 3842</p></div>
+          </div>
+          <div class="contact-item">
+  <span class="contact-icon">📍</span>
+  <div>
+    <h4>Location</h4>
+    <p>
+      <a href="https://www.google.com/maps/search/?api=1&query=Tropang+Selan+Motorshop+M+Jimenez+Street+Kalawaan+Pasig+Metro+Manila" 
+         target="_blank" 
+         style="color:#F5C518; text-decoration:underline;">
+        Tropang Selan Motorshop, M Jimenez Street, Kalawaan, Pasig, 1604 Metro Manila
+      </a>
+    </p>
+  </div>
+</div>
+          <div class="contact-item">
+            <span class="contact-icon">⌛️</span>
+            <div><h4>Business Hours</h4><p>Monday - Saturday: 8AM - 6PM</p></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 class="footer-logo">TROPANG SELAN</h3>
+        <p>Your trusted local motorcycle shop. Built for riders, by riders.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4 class="footer-heading"></h4>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Tropang Selan. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- contact.js ONLY here at the bottom, once -->
+  <script src="contact.js"></script>
+
+</body>
+</html>
