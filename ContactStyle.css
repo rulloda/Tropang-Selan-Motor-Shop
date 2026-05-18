@@ -105,7 +105,7 @@ nav {
 }
 
 /* =============================================
-   PAGE WRAPPER (about, contact, products pages)
+   PAGE WRAPPER 
 ============================================= */
 .page-wrapper {
   padding: 120px 60px 60px 60px;
@@ -381,7 +381,7 @@ footer {
 
   /* ABOUT PAGE */
   .about-grid {
-    flex-direction: column; /* stacks image and text vertically */
+    flex-direction: column; 
   }
 
   .founders-grid {
@@ -395,11 +395,11 @@ footer {
 
   /* PRODUCTS PAGE */
   .card {
-    width: calc(50% - 12px); /* 2 cards per row instead of 3 */
+    width: calc(50% - 12px); 
   }
 
   .service-card {
-    width: calc(50% - 12px); /* 2 service cards per row */
+    width: calc(50% - 12px); 
   }
 
   /* FOOTER */
@@ -447,7 +447,7 @@ footer {
     top: auto;
     bottom: 0;
     clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
-    /* slant is now at the TOP of the yellow block */
+    
   }
 
   .hero-top {
@@ -504,14 +504,14 @@ footer {
     position: relative;
     bottom: auto;
     left: auto;
-    flex-direction: column; /* stack the two columns */
+    flex-direction: column; 
     width: 90%;
     margin: 20px auto;
     gap: 30px;
   }
 
   .hero-moto-bg {
-    display: none; /* hide on mobile — too small to matter */
+    display: none; 
   }
 
   /* PAGE WRAPPER */
@@ -540,11 +540,11 @@ footer {
 
   /* PRODUCTS PAGE */
   .card {
-    width: 100%; /* 1 card per row on mobile */
+    width: 100%; 
   }
 
   .service-card {
-    width: calc(50% - 12px); /* 2 service cards per row */
+    width: calc(50% - 12px); 
   }
 
   /* FOOTER */
